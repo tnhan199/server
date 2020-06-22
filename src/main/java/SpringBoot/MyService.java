@@ -11,9 +11,9 @@ import SpringBoot.dto.MyServiceGrpc;
 import SpringBoot.dto.Project;
 import SpringBoot.dto.Request;
 import SpringBoot.dto.Response;
-import SpringBoot.reponsitory1.EmployeeReponsitory;
-import SpringBoot.reponsitory1.GroupReponsitory;
-import SpringBoot.reponsitory1.ProjectRepository;
+import SpringBoot.reponsitory.EmployeeReponsitory;
+import SpringBoot.reponsitory.GroupReponsitory;
+import SpringBoot.reponsitory.Project.ProjectRepository;
 import io.grpc.stub.StreamObserver;
 import net.devh.boot.grpc.server.service.GrpcService;
 
@@ -65,5 +65,13 @@ public class MyService extends MyServiceGrpc.MyServiceImplBase {
         }
         responseObserver.onNext(responeBuilder.build());
         responseObserver.onCompleted();
+    }
+
+    @Override
+    public void getProjects(Request request, StreamObserver<Project> responseObserver) {
+        SpringBoot.entity.Project project=projectConverter.toEntity(request.getProject());
+        projectRepository.searchBy(project,request.getPage(),request.getMaxItemInPage()).forEach(project1 -> {
+            responseObserver.onNext(projectConverter.toDTO(project1));
+        });
     }
 }
