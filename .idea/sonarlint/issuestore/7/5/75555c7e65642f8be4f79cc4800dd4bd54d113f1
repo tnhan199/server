@@ -1,0 +1,54 @@
+
+C
+java:S11997"-Extract this nested code block into a method.(­Ó–Ô
+C
+java:S1199<"-Extract this nested code block into a method.(Ý…î½
+H
+java:S1199A"-Extract this nested code block into a method.(”¤óˆüÿÿÿÿ
+H
+java:S1199F"-Extract this nested code block into a method.(ì¼Â©ûÿÿÿÿ
+C
+java:S1199L"-Extract this nested code block into a method.(¾ø‚©
+H
+java:S1199Y"-Extract this nested code block into a method.(Î—­Šþÿÿÿÿ
+F
+java:S1066µ"/Merge this if statement with the enclosing one.(Ä·Ô«
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(³çÊÏúÿÿÿÿ
+u
+java:S1488»"_Immediately return this expression instead of assigning it to the temporary variable "builder".(«‰Ÿ~
+
+java:S4144ï"cUpdate this method so that its implementation is not identical to "getDefaultInstance" on line 982.(¼˜”Íûÿÿÿÿ
+s
+java:S3077Ÿ"WUse a thread-safe type; adding "volatile" is not enough to make this field thread-safe.(ñù¢ùÿÿÿÿ
+q	java:S116{"WRename this field "typeRequest_" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(î‚Ÿ©úÿÿÿÿ
+k	java:S116‡"PRename this field "page_" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(®´ì¹øÿÿÿÿ
+t	java:S116“"YRename this field "maxItemInPage_" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ã²éÀûÿÿÿÿ
+m	java:S116Ÿ"RRename this field "search_" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ñù¢ùÿÿÿÿ
+i	java:S116Ç"SRename this field "project_" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ââáª
+E
+java:S1948Ÿ")Make "search_" transient or serializable.(ñù¢ùÿÿÿÿ
+]
+java:S1126¸"AReplace this if-then-else statement by a single return statement.(®Èäîÿÿÿÿÿ
+r	java:S116û"WRename this field "typeRequest_" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(î‚Ÿ©úÿÿÿÿ
+k	java:S116Ÿ"PRename this field "page_" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(®´ì¹øÿÿÿÿ
+t	java:S116Ã"YRename this field "maxItemInPage_" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ã²éÀûÿÿÿÿ
+h	java:S116ç"RRename this field "search_" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(äß˜ï
+i	java:S116½"SRename this field "project_" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ââáª
+p	java:S116¿"ZRename this field "projectBuilder_" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(±žÆ©
+?	java:S108à")Either remove or fill this block of code.(º„ç½
+D
+java:S1185"(Remove this method to simply inherit it.(Îõ¾Òûÿÿÿÿ
+o
+java:S2975"SRemove this "clone" implementation; use a copy constructor or copy factory instead.(Îõ¾Òûÿÿÿÿ
+D
+java:S1185¢"(Remove this method to simply inherit it.(ÑÍ“Ëûÿÿÿÿ
+D
+java:S1185©"(Remove this method to simply inherit it.(Ã•Œƒüÿÿÿÿ
+D
+java:S1185¯"(Remove this method to simply inherit it.(»¤Å“ûÿÿÿÿ
+?
+java:S1185µ"(Remove this method to simply inherit it.(§ß—¡
+?
+java:S1185¼"(Remove this method to simply inherit it.(¿¸Ú©
+u
+java:S2293µ"YReplace the type specification in this constructor call with the diamond operator ("<>").(³¯‘³þÿÿÿÿ

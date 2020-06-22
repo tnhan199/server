@@ -1,0 +1,37 @@
+
+C
+java:S11997"-Extract this nested code block into a method.(­Ó–Ô
+C
+java:S1199<"-Extract this nested code block into a method.(žò‘
+H
+java:S1199B"-Extract this nested code block into a method.(Î—­Šþÿÿÿÿ
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(³çÊÏúÿÿÿÿ
+u
+java:S1488Ê"_Immediately return this expression instead of assigning it to the temporary variable "builder".(«‰Ÿ~
+z
+java:S4144š"cUpdate this method so that its implementation is not identical to "getDefaultInstance" on line 641.(”´Ç½
+m
+java:S3077p"WUse a thread-safe type; adding "volatile" is not enough to make this field thread-safe.(åÁ²Ý
+o	java:S116d"URename this field "isSuccess_" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.( ’ó¢úÿÿÿÿ
+h	java:S116p"SRename this field "message_" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(åÁ²Ý
+@
+java:S1948p"*Make "message_" transient or serializable.(åÁ²Ý
+]
+java:S1126Ï"AReplace this if-then-else statement by a single return statement.(®Èäîÿÿÿÿÿ
+p	java:S116ð"URename this field "isSuccess_" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.( ’ó¢úÿÿÿÿ
+n	java:S116”"SRename this field "message_" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Æø…ˆûÿÿÿÿ
+?	java:S108ï")Either remove or fill this block of code.(º„ç½
+D
+java:S1185›"(Remove this method to simply inherit it.(Îõ¾Òûÿÿÿÿ
+o
+java:S2975›"SRemove this "clone" implementation; use a copy constructor or copy factory instead.(Îõ¾Òûÿÿÿÿ
+D
+java:S1185 "(Remove this method to simply inherit it.(ÑÍ“Ëûÿÿÿÿ
+D
+java:S1185§"(Remove this method to simply inherit it.(Ã•Œƒüÿÿÿÿ
+D
+java:S1185­"(Remove this method to simply inherit it.(»¤Å“ûÿÿÿÿ
+?
+java:S1185³"(Remove this method to simply inherit it.(§ß—¡
+?
+java:S1185º"(Remove this method to simply inherit it.(¿¸Ú©

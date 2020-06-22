@@ -1,0 +1,91 @@
+
+D
+java:S1185¯"(Remove this method to simply inherit it.(ÑÍ“Ëûÿÿÿÿ
+n
+java:S3077å"WUse a thread-safe type; adding "volatile" is not enough to make this field thread-safe.(“Äò³
+s
+java:S3077İ"WUse a thread-safe type; adding "volatile" is not enough to make this field thread-safe.(ú©Ìûÿÿÿÿ
+n	java:S116ä"YRename this field "projectNumber_" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ø‡úT
+j	java:S116à
+"URename this field "startDate_" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ì»ås
+n	java:S116À"SRename this field "groupId_" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(òªì”ıÿÿÿÿ
+m	java:S116½"WRename this field "projectName_" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(œäÉÁ
+H
+java:S1199J"-Extract this nested code block into a method.(”¤óˆüÿÿÿÿ
+i	java:S116Œ"SRename this field "version_" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(—³ƒå
+B
+java:S1948"+Make "customer_" transient or serializable.(àÉÉš
+D
+java:S1185¼"(Remove this method to simply inherit it.(»¤Å“ûÿÿÿÿ
+n
+java:S3077½"WUse a thread-safe type; adding "volatile" is not enough to make this field thread-safe.(œäÉÁ
+H
+java:S1199["-Extract this nested code block into a method.(ØİÄøÿÿÿÿ
+{
+java:S4144à"dUpdate this method so that its implementation is not identical to "getDefaultInstance" on line 1607.(»Ó˜á
+d	java:S116™"NRename this field "id_" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(—‡Ñ÷
+H
+java:S1199g"-Extract this nested code block into a method.(»âğÍıÿÿÿÿ
+?
+java:S1185É"(Remove this method to simply inherit it.(¿¸Ú©
+j	java:S116"TRename this field "customer_" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(àÉÉš
+n
+java:S3077µ"WUse a thread-safe type; adding "volatile" is not enough to make this field thread-safe.(éÉÿÔ
+?
+java:S1185Â"(Remove this method to simply inherit it.(§ß—¡
+m	java:S116Š
+"RRename this field "status_" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ô¥Ğ³ûÿÿÿÿ
+E
+java:S1948½".Make "projectName_" transient or serializable.(œäÉÁ
+u
+java:S1488¾"_Immediately return this expression instead of assigning it to the temporary variable "builder".(«‰Ÿ~
+H
+java:S1199?"-Extract this nested code block into a method.(ê×Êüÿÿÿÿ
+o
+java:S2975ª"SRemove this "clone" implementation; use a copy constructor or copy factory instead.(Îõ¾Òûÿÿÿÿ
+m	java:S116Ş"RRename this field "member_" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(› –Úúÿÿÿÿ
+i	java:S116­"SRename this field "version_" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(—³ƒå
+n	java:S116±"YRename this field "projectNumber_" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ø‡úT
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(³çÊÏúÿÿÿÿ
+n
+java:S3077"WUse a thread-safe type; adding "volatile" is not enough to make this field thread-safe.(àÉÉš
+h	java:S116…"SRename this field "endDate_" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(çµÊ-
+@
+java:S1948…"*Make "endDate_" transient or serializable.(çµÊ-
+n	java:S116¥"SRename this field "groupId_" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(òªì”ıÿÿÿÿ
+j	java:S116´	"TRename this field "customer_" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ïò›
+]
+java:S1126³"AReplace this if-then-else statement by a single return statement.(®Èäîÿÿÿÿÿ
+C
+java:S1199U"-Extract this nested code block into a method.(¾ø‚©
+h	java:S116å"RRename this field "member_" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(“Äò³
+p	java:S116İ"URename this field "startDate_" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ú©Ìûÿÿÿÿ
+r	java:S116ˆ"WRename this field "projectName_" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ßöò¡şÿÿÿÿ
+?	java:S108æ")Either remove or fill this block of code.(º„ç½
+H
+java:S1948İ",Make "startDate_" transient or serializable.(ú©Ìûÿÿÿÿ
+C
+java:S1199E"-Extract this nested code block into a method.(İ…î½
+D
+java:S1185ª"(Remove this method to simply inherit it.(Îõ¾Òûÿÿÿÿ
+H
+java:S1199O"-Extract this nested code block into a method.(ì¼Â©ûÿÿÿÿ
+C
+java:S1199m"-Extract this nested code block into a method.(·Ûãê
+H
+java:S1199w"-Extract this nested code block into a method.(Î—­Šşÿÿÿÿ
+m
+java:S3077…"WUse a thread-safe type; adding "volatile" is not enough to make this field thread-safe.(çµÊ-
+n	java:S116¶"SRename this field "endDate_" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(º‹Úùÿÿÿÿ
+D
+java:S1185¶"(Remove this method to simply inherit it.(Ã•Œƒüÿÿÿÿ
+h	java:S116µ"RRename this field "status_" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(éÉÿÔ
+H
+java:S1199r"-Extract this nested code block into a method.( Ç–ııÿÿÿÿ
+H
+java:S1199a"-Extract this nested code block into a method.(íÂ°Èüÿÿÿÿ
+d	java:S116œ"NRename this field "id_" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(—‡Ñ÷
+@
+java:S1948å")Make "member_" transient or serializable.(“Äò³
+@
+java:S1948µ")Make "status_" transient or serializable.(éÉÿÔ
