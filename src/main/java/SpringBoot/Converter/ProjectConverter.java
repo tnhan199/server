@@ -1,14 +1,15 @@
 package SpringBoot.Converter;
 
 import java.text.SimpleDateFormat;
+import java.util.stream.Collectors;
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 
-import SpringBoot.entity.Employee;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
+import SpringBoot.entity.Employee;
 import SpringBoot.entity.Project;
 import SpringBoot.reponsitory.EmployeeReponsitory;
 import SpringBoot.reponsitory.GroupReponsitory;
@@ -32,9 +33,9 @@ public class ProjectConverter extends Converter {
             System.out.println(e.getMessage());
         }
         for (String i : dto.getMember().split(",")) {
-           Employee tmp=employeeReponsitory.getByVisa(i);
-           if(tmp!=null)
-               entity.addEmployee(tmp);
+            Employee tmp = employeeReponsitory.getByVisa(i);
+            if (tmp != null)
+                entity.addEmployee(tmp);
         }
         groupReponsitory.findById(dto.getGroupId()).ifPresent(group -> {
             entity.setGroup(group);
@@ -45,7 +46,17 @@ public class ProjectConverter extends Converter {
         return entity;
 
     }
-    public SpringBoot.dto.Project toDTO(Project project){
-        return SpringBoot.dto.Project.newBuilder().setGroupId(project.getGroup().getId()).setId(project.getId()).setProjectNumber(project.getProjectNumber()).setProjectName(project.getProjectName()).setStatus(project.getStatus()).setStartDate( new SimpleDateFormat("yyyy-MM-dd").format(project.getStartDate())).setEndDate(new SimpleDateFormat("yyyy-MM-dd").format(project.getEndDate())).build();
+
+    public SpringBoot.dto.Project toDTO(Project project) {
+        SpringBoot.dto.Project.Builder builder = SpringBoot.dto.Project.newBuilder();
+        builder.setId(project.getId()).setGroupId(project.getGroup().getId()).setProjectNumber(project.getProjectNumber());
+        builder.setProjectName(project.getProjectName());
+        builder.setStartDate(new SimpleDateFormat("yyyy-MM-dd").format(project.getStartDate()));
+        builder.setCustomer(project.getCustomer()).setStatus(project.getStatus());
+        String[] visas = new String[project.getEmployees().size()];
+        project.getEmployees().stream().map(employee -> employee.getVisa()).collect(Collectors.toList()).toArray(visas);
+
+        builder.setMember(String.join(",", visas));
+        return builder.build();
     }
 }

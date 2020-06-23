@@ -69,9 +69,39 @@ public class MyService extends MyServiceGrpc.MyServiceImplBase {
 
     @Override
     public void getProjects(Request request, StreamObserver<Project> responseObserver) {
-        SpringBoot.entity.Project project=projectConverter.toEntity(request.getProject());
-        projectRepository.searchBy(project,request.getPage(),request.getMaxItemInPage()).forEach(project1 -> {
+        SpringBoot.entity.Project project = projectConverter.toEntity(request.getProject());
+        projectRepository.searchBy(project, request.getPage(), request.getMaxItemInPage()).forEach(project1 -> {
             responseObserver.onNext(projectConverter.toDTO(project1));
         });
+        responseObserver.onCompleted();
+    }
+
+    @Override
+    public void deleteProject(Project request, StreamObserver<Response> responseObserver) {
+        Response.Builder builder = Response.newBuilder();
+        try {
+            projectRepository.deleteById(request.getId());
+            builder.setIsSuccess(1);
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+            builder.setIsSuccess(0);
+        }
+        responseObserver.onNext(builder.build());
+        responseObserver.onCompleted();
+
+    }
+
+    @Override
+    public void updateProject(Project request, StreamObserver<Response> responseObserver) {
+        Response.Builder builder = Response.newBuilder();
+        try {
+            projectRepository.save(projectConverter.toEntity(request));
+            builder.setIsSuccess(1);
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+            builder.setIsSuccess(0);
+        }
+        responseObserver.onNext(builder.build());
+        responseObserver.onCompleted();
     }
 }

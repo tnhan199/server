@@ -13,6 +13,6 @@ import SpringBoot.entity.Employee;
 public interface EmployeeReponsitory extends CrudRepository<Employee, Integer> {
     public Integer countByVisa(String visa);
 
-    @Query("select u from Employee u  join fetch u.projects where u.visa=?1 ")
+    @Query("select u from Employee u  left join fetch u.projects where u.visa=?1 ")
     public Employee getByVisa(String visa);
 }
