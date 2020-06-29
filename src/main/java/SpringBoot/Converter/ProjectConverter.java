@@ -43,6 +43,7 @@ public class ProjectConverter extends Converter {
         entity.setProjectName(dto.getProjectName());
         entity.setProjectNumber(dto.getProjectNumber());
         entity.setStatus(dto.getStatus());
+        entity.setId(dto.getId());
         return entity;
 
     }

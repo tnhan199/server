@@ -27,7 +27,7 @@ public class Project {
             name = "project_employee", joinColumns = @JoinColumn(name = "project_id"), inverseJoinColumns = @JoinColumn(name = "employee_id")
     )
     private Set<Employee> employees;
-    @Column(name = "projectNumber")
+    @Column(name = "projectNumber", nullable = false, unique = true)
     private Integer projectNumber;
     @ManyToOne
     @JoinColumn(name = "group_id", nullable = false)
@@ -108,11 +108,11 @@ public class Project {
         this.endDate = endDate;
     }
 
-    @Column(name = "projectName")
+    @Column(name = "projectName", nullable = false)
     private String projectName;
-    @Column(name = "status")
+    @Column(name = "status", nullable = false)
     private String status;
-    @Column(name = "startDate")
+    @Column(name = "startDate", nullable = false)
     private Date startDate;
     @Column(name = "endDate")
     private Date endDate;

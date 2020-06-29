@@ -1,6 +1,8 @@
 package SpringBoot;
 
+import java.util.ArrayList;
 import java.util.Iterator;
+import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 
@@ -52,13 +54,18 @@ public class MyService extends MyServiceGrpc.MyServiceImplBase {
             responeBuilder.setIsSuccess(2);
         } else {
             int check = 0;
+            //String message = "The following visas do not exist: ";
+            List<String> visas = new ArrayList<>();
             for (String i : request.getMember().split(",")) {
-                if (employeeReponsitory.countByVisa(i) == 0)
+                if (employeeReponsitory.countByVisa(i) == 0) {
                     check = 1;
+                    visas.add(i);
+                }
             }
-            if (check == 1)
+            if (check == 1) {
                 responeBuilder.setIsSuccess(3);
-            else {
+                responeBuilder.setMessage("The following visas do not exist: " + String.join(",", visas));
+            } else {
                 projectRepository.save(projectConverter.toEntity(request));
                 responeBuilder.setIsSuccess(1);
             }
